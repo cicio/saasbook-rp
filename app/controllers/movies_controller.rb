@@ -11,4 +11,13 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.html.haml by default
   end
 
+  def new
+    # default ; it will render the "new "template
+  end
+
+  def create
+    @movie = Movie.create!(params[:movie])
+    flash[:notice] = "#{@movie.title} was successfully created."
+    redirect_to movies_path
+  end
 end
