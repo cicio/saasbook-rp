@@ -5,6 +5,8 @@
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
+    %header
+    = link_to "Cicio's Rotten Potatoes", :root, id: 'banner'
 
   %body   
     - if flash[:notice]

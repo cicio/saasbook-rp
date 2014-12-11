@@ -19,6 +19,13 @@ a {
   text-decoration: underline;
   font-weight: bold;
 }
+a#banner {
+    color: red;
+    font-size: 3em;
+    background: transparent;
+    text-decoration: none;
+    }
+
 h1 {
   color: maroon;
   font-size: 150%;
